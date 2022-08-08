@@ -11,7 +11,6 @@
     <link rel="stylesheet" href="./style.css">
   </head>
   <body>
-    <h1>HTML Form</h1>
     <script type="text/javascript" src="./main.js"></script>
     <form action="https://mate-academy-form-lesson.herokuapp.com/create-application"
   method="post">
@@ -22,8 +21,7 @@
         Surname:
           <input
             type="text"
-            name="surname"
-            class="field"
+            name="surname" 
           >
         </label>
 
@@ -32,7 +30,6 @@
           <input
             type="text"
             name="name"
-            class="field"
           >
         </label>
 
@@ -44,7 +41,6 @@
             value="12"
             min="1"
             max="100"
-            class="field"
           >
         </label>
 
@@ -53,9 +49,9 @@
           <input
             type="date" 
             name="birtdate"
-            class="field"
           >
         </label>
+
         <label class="form-field">
           I accept the term of the agreement
           <input
@@ -76,7 +72,6 @@
             name="email"
             placeholder="email@example.com"
             required
-            class="field"
           >
         </label>
 
@@ -88,7 +83,6 @@
             required
             minlength="5"
             maxlength="32"
-            class="field"
           >
         </label>
       </fieldset>
@@ -97,7 +91,7 @@
         <legend>An interesting fact about you</legend>
         <div class="form-field">
           Do you love cats?
-          <label>
+          <label class="form-field">
             <input
               type="radio"
               name="cats"
@@ -107,7 +101,7 @@
             Yes
           </label>
 
-          <label>
+          <label class="form-field">
             <input
               type="radio"
               name="cats"
@@ -130,7 +124,6 @@
           <input 
             type="time"
             name="sleep"
-            class="field"
            >
         </label>
       
@@ -139,7 +132,6 @@
           <select
             name="cars"
             multiple
-            class="field"
           >
             <option value="BMW">BMW</option>
             <option value="Audi">Audi</option>
@@ -160,11 +152,10 @@
       <fieldset>
         <legend>Additional info:</legend>
         <label class="form-field">
-          Comments
+          Comments:
           <textarea
              name="info"
              autocomplete="off"
-             class="field"
           >
           </textarea>
         </label>
@@ -173,12 +164,12 @@
           Would you recommend us?
 
           <select name="recommend">
-            <option value="Yes">Yes</option>
-            <option value="No">No</option>
+            <option value="yes">yes</option>
+            <option value="no">no</option>
           </select>
         </label>
       </fieldset>
-     
+      
       <button type="submit">Submit</button>
     </form>
   </body>
